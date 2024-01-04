@@ -13,7 +13,7 @@ namespace Feval.Cli
             context.RegisterDumper(JsonConvert.SerializeObject);
 
             Console.WriteLine(context.Evaluate("version()"));
-            // Console.WriteLine(context.Evaluate("copyright()"));
+            Console.WriteLine(context.Evaluate("copyright()"));
             if (options.DefaultUsingNamespaces.Count > 0)
             {
                 Console.WriteLine("Using default namespaces:");
